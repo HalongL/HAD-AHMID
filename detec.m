@@ -30,12 +30,12 @@ anomaly_map = logical(double(mask_reshape)>0);
 normal_map = logical(double(mask_reshape)==0);
 Y=reshape(DataTest, num, Dim)';
 %%
-%AHMID
+%AHMID Layer 0
 Dict=ConstructionDict(Y,5,8);%LRASR method
 alpha=1;
 lambda=0.1;
 tic
-[Z,S,E,N]=AHMID(Y,Dict,alpha,lambda,1);
+[Z,S,E,N]=AHMID(Y,Dict,alpha,lambda,1); %S-Model
 t_layer0=toc;
 
 u_s=mean(S);
@@ -66,9 +66,9 @@ imshow(f_show_0);
 alpha1=1;
 lambda1=1;
 tic
-[~,Dict1,~,~]=UpDict(Y,S,Dict,Z,alpha1,lambda1,1);
+[~,Dict1,~,~]=UpDict(Y,S,Dict,Z,alpha1,lambda1,1);%D-Model
 lambda1=0.1;
-[Z1,S1,E1,N1]=AHMID(Y,Dict1,alpha1,lambda1,1);
+[Z1,S1,E1,N1]=AHMID(Y,Dict1,alpha1,lambda1,1);%S-Model
 t_layer1=toc;
 
 u_s1=mean(S1);
