@@ -10,6 +10,9 @@ T. Guo, L. He, F. Luo, X. Gong, Y. Li and L. Zhang, "Anomaly Detection of Hypers
 
 matlab R2020a
 
+## Model Structure
+
+![](D:\研究生资料\TGRS-AHMID\major revision\manuscript-TGRS\manuscript-TGRS\figs\F1.jpg)
 ## Citation
 
 If these codes and dataset are helpful for you, please cite this paper:
