@@ -27,3 +27,5 @@ If these codes and dataset are helpful for you, please cite this paper:
 
 ```
 
+## License
+Code and datasets are released for non-commercial and research purposes only. For commercial purposes, please contact the authors.
