@@ -4,7 +4,7 @@ This is the code of paper named "Anomaly Detection of Hyperspectral Image with H
 
 For more information of this project, please refer to our paper:
 
-T. Guo, L. He, F. Luo, X. Gong, Y. Li and L. Zhang, "Anomaly Detection of Hyperspectral Image with Hierarchical Anti-noise Mutual-Incoherence-induced Low-Rank Representation," in *IEEE Transactions on Geoscience and Remote Sensing*, doi: 10.1109/TGRS.2023.3269097.
+T. Guo, L. He, F. Luo, X. Gong, Y. Li and L. Zhang, "Anomaly Detection of Hyperspectral Image with Hierarchical Anti-noise Mutual-Incoherence-induced Low-Rank Representation," in *IEEE Transactions on Geoscience and Remote Sensing*.
 
 ## Prerequisites
 
