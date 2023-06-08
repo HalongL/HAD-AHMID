@@ -56,10 +56,10 @@ for index1 = 1:length(taus)
   PF10(index1) = sum(anomaly_map_rx & normal_map)/sum(normal_map);
   PD10(index1) = sum(anomaly_map_rx & anomaly_map)/sum(anomaly_map);
 end
-area_HID = sum((PF10(1:end-1)-PF10(2:end)).*(PD10(2:end)+PD10(1:end-1))/2);
+area_Layer_0 = sum((PF10(1:end-1)-PF10(2:end)).*(PD10(2:end)+PD10(1:end-1))/2);
 f_show_0=reshape(r10,[H,W]);
 f_show_0=(f_show_0-min(f_show_0(:)))/(max(f_show_0(:))-min(f_show_0(:)));
-figure('name','HID'), imshow(f_show_0);
+figure('name','Layer_0'), imshow(f_show_0);
 imshow(f_show_0);
 
 %% LAYER1
@@ -87,9 +87,9 @@ for index1 = 1:length(taus)
   PFn1(index1) = sum(anomaly_map_rx & normal_map)/sum(normal_map);
   PDn1(index1) = sum(anomaly_map_rx & anomaly_map)/sum(anomaly_map);
 end
-area_HID_1 = sum((PFn1(1:end-1)-PFn1(2:end)).*(PDn1(2:end)+PDn1(1:end-1))/2);
+area_Layer_1 = sum((PFn1(1:end-1)-PFn1(2:end)).*(PDn1(2:end)+PDn1(1:end-1))/2);
 f_show_1=reshape(rn_new1,[H,W]);
 f_show_1=(f_show_1-min(f_show_1(:)))/(max(f_show_1(:))-min(f_show_1(:)));
-figure('name','HID_1'), imshow(f_show_1);
+figure('name','Layer_1'), imshow(f_show_1);
 imshow(f_show_1);
 %% LAYER n ...
