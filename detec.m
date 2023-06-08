@@ -1,6 +1,4 @@
 %%
-addpath(genpath('./data'));
-
 load urban_162band
 hsi=urban_detection;
 hsi_gt=groundtruth;
